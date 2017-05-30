@@ -1,0 +1,54 @@
+<ion-header>
+	<div id="not-focus">
+		<ion-navbar color="bukalapak" *ngIf="!sedangFocus">
+			<ion-buttons end>
+				<button ion-button (tap)="deleteAll()">
+					<ion-icon name="more"></ion-icon>
+				</button>
+			</ion-buttons>
+		</ion-navbar>
+	</div>
+
+	<div id="on-focus">
+		<ion-navbar color="bukalapak2" *ngIf="sedangFocus">
+			<ion-grid>
+				<ion-row>
+					<ion-col col-2>
+						<ion-icon name="checkbox-outline" id="first" tappable (tap)="exitFocus()"></ion-icon>
+					</ion-col>
+					<ion-col col-8>
+						<p>{{ jumlah }} item terpilih</p>
+					</ion-col>
+					<ion-col col-2>
+						<ion-buttons end>
+							<button ion-button (tap)="deleteSeveral()">
+								<ion-icon name="trash" id="twice"></ion-icon>
+							</button>
+						</ion-buttons>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-navbar>
+	</div>
+</ion-header>
+
+
+<ion-content>
+
+	<div id="list-item">
+		<ion-row>
+			<ion-col col-6 *ngFor="let myList of favorit; let i = index">
+				<ion-card tappable (tap)="toDetail(myList,$event,i)" touch-focus (onFocus)="handleFocus(myList,i)">
+			  	<img src="assets/img/list.png"/>
+			  	<ion-card-content>
+			    	<p>
+			      	<strong>{{ myList.item }}</strong><br>
+			      	{{ myList.harga | rupiah }}
+			    	</p>
+	  			</ion-card-content>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+	</div>
+<button ion-button (click)="debug()">debug</button>
+</ion-content>

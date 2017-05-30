@@ -1,0 +1,8 @@
+<ion-content>
+	<ion-tabs #myTabs>
+		<ion-tab (ionSelect)="play()" [root]="home" tabTitle="home" tabIcon="home" tabsHideOnSubPages="true"></ion-tab>
+		<ion-tab (ionSelect)="play()" [root]="favorit" tabTitle="favorit" tabIcon="heart" tabsHideOnSubPages="true"></ion-tab>
+		<ion-tab (ionSelect)="play()" [root]="transaksi" tabTitle="transakasi" tabIcon="swap"></ion-tab>
+		<ion-tab (ionSelect)="play()" [root]="profil" tabTitle="profil" tabIcon="contact"></ion-tab>
+	</ion-tabs>
+</ion-content>

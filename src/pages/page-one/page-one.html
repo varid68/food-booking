@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar color="bukalapak">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-10>
+          <ion-searchbar (ionInput)="searchItems($event)"></ion-searchbar>
+        </ion-col>
+        <ion-col col-2>
+          <ion-buttons style="position: absolute;">
+            <button ion-button (click)="goToPage('Cart')" end>
+              <ion-icon name="cart"></ion-icon>
+            </button>
+            <ion-badge>{{ jumlahOrder }}</ion-badge>
+          </ion-buttons>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content>
+  <div id="autocomplete" *ngIf="hasil">
+    <ion-list>
+      <ion-item *ngFor="let item of hasil" tappable (click)="toDetail(item)">{{ item.item }}</ion-item>
+    </ion-list>
+  </div>
+
+  <div id="slide">
+    <ion-slides pager autoplay="3000" speed="900" loop="true">
+      <ion-slide *ngFor="let slide of slides">
+        <img [src]="slide.image" class="slide-image">
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+  <div id="etalase">
+    <ion-grid>
+      <ion-row>
+        <ion-col col-6 tappable (click)="goToPage('FoodList')">
+          <img src="./assets/img/food.png" />
+        </ion-col>
+        <ion-col>
+          <img src="./assets/img/drink.png" tappable (click)="goToPage('DrinkList')">
+        </ion-col>
+      </ion-row>
+      <ion-row>
+        <ion-col col-12>
+          <img src="./assets/img/cake.png" tappable (click)="goToPage('WesternList')">
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+    <ion-spinner name="crescent" *ngIf="stillLoading"></ion-spinner>
+  </div>
+
+
+</ion-content>

@@ -1,0 +1,101 @@
+<ion-header>
+  <ion-navbar color="bukalapak">
+    <ion-title>Selesaikan Pesanan</ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content>
+
+	<ion-card>
+		<ion-card-header>
+			Data Pembeli
+		</ion-card-header>
+		<ion-card-content>
+			<ion-list>
+				<ion-item>
+					<ion-label floating>Nama Pembeli</ion-label>
+					<ion-input type="text" required [(ngModel)]="pembeli.nama" #nama="ngModel"></ion-input>
+				</ion-item>
+				<div [hidden]="nama.valid || nama.pristine">nama tidak boleh kosong!</div>
+				<ion-item>
+					<ion-label floating>Email</ion-label>
+					<ion-input type="text"></ion-input>
+				</ion-item>
+				<ion-item>
+					<ion-label floating>No Telepon Pembeli</ion-label>
+					<ion-input type="text" required [(ngModel)]="pembeli.hp" #hp="ngModel"></ion-input>
+				</ion-item>
+				<div [hidden]="hp.valid || hp.pristine">no. HP tidak boleh kosong!</div>
+			</ion-list>
+			<p text-right>0/15</p>
+		</ion-card-content>
+	</ion-card>
+
+	<ion-card>
+		<ion-card-header>
+			Alamat Pengiriman
+		</ion-card-header>
+		<ion-card-content>
+			<ion-list>
+				<ion-item>
+					<ion-label stacked>Kecamatan</ion-label>
+					<ion-select placeholder="Pilih Kecamatan" interface="popover" (ionChange)="getDesa($event)" required [(ngModel)]="pembeli.kecamatan" #kec="ngModel">
+						<ion-option *ngFor="let item of kecamatan" value="{{ item.nama }}">{{ item.nama | lowercase }}</ion-option>
+					</ion-select>
+				</ion-item>
+
+				<div *ngIf="loading"><ion-spinner name="crescent"></ion-spinner> please wait ..</div>
+				<ion-item>
+					<ion-label stacked>Kampung/Desa</ion-label>
+					<ion-select placeholder="Pilih Desa" interface="popover" required [(ngModel)]="pembeli.desa" #kampung="ngModel">
+						<ion-option *ngFor="let item of desa">{{ item.nama | lowercase }}</ion-option>
+					</ion-select>
+				</ion-item>
+
+				<ion-item>
+					<ion-label floating>Alamat</ion-label>
+					<ion-input type="text" required [(ngModel)]="pembeli.lengkap" #lengkap="ngModel"></ion-input>
+				</ion-item>
+				<div [hidden]="lengkap.valid || lengkap.pristine">alamat lengkap tidak boleh kosong!</div>
+			</ion-list>
+		</ion-card-content>
+	</ion-card>
+
+	<div id="deskripsi-item">
+		<ion-card>
+			<ion-grid>
+				<ion-row>
+					<ion-col col-2 class="satu">
+						<p> Item</p>
+					</ion-col>
+					<ion-col col-10 class="satu">
+						<p text-right>Subtotal</p>
+					</ion-col>
+				</ion-row>
+				<ion-row>
+					<ion-col col-2 class="dua">
+						<img src="http://placehold.it/45x50">
+					</ion-col>
+					<ion-col col-7 class="dua">
+						<p>{{ jual.item |uppercase }}</p>
+						<p>{{ jual.jumlah }}item</p>
+						<p>{{ total / jual.jumlah | rupiah }}</p>
+					</ion-col>
+					<ion-col col-3>
+						<br><br>
+						<p class="tiga" text-right>{{ total | rupiah}}</p>
+					</ion-col>
+				</ion-row>
+			</ion-grid>
+		</ion-card>
+	</div>
+
+	<div id="bawah">
+		<ion-card>
+			<ion-card-content>
+				<button ion-button full color="bukalapak" (click)="postData()" [disabled]="!nama.valid || !hp.valid || !kec.valid || !kampung.valid || !lengkap.valid">lanjut</button>
+			</ion-card-content>
+		</ion-card>
+	</div>
+			
+</ion-content>

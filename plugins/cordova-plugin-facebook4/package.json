@@ -1,0 +1,106 @@
+{
+  "_args": [
+    [
+      {
+        "raw": "cordova-plugin-facebook4",
+        "scope": null,
+        "escapedName": "cordova-plugin-facebook4",
+        "name": "cordova-plugin-facebook4",
+        "rawSpec": "",
+        "spec": "latest",
+        "type": "tag"
+      },
+      "C:\\xampp\\htdocs\\latihan\\ionic2\\ionicBlank\\node_modules"
+    ]
+  ],
+  "_from": "cordova-plugin-facebook4@latest",
+  "_id": "cordova-plugin-facebook4@1.9.0",
+  "_inCache": true,
+  "_location": "/cordova-plugin-facebook4",
+  "_nodeVersion": "7.10.0",
+  "_npmOperationalInternal": {
+    "host": "packages-12-west.internal.npmjs.com",
+    "tmp": "tmp/cordova-plugin-facebook4-1.9.0.tgz_1494947010513_0.5972316123079509"
+  },
+  "_npmUser": {
+    "name": "jeduan",
+    "email": "jeduan@gmail.com"
+  },
+  "_npmVersion": "4.6.1",
+  "_phantomChildren": {},
+  "_requested": {
+    "raw": "cordova-plugin-facebook4",
+    "scope": null,
+    "escapedName": "cordova-plugin-facebook4",
+    "name": "cordova-plugin-facebook4",
+    "rawSpec": "",
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER",
+    "/"
+  ],
+  "_resolved": "https://registry.npmjs.org/cordova-plugin-facebook4/-/cordova-plugin-facebook4-1.9.0.tgz",
+  "_shasum": "84e54c239f6d80a844415d30cefe7a28c7090541",
+  "_shrinkwrap": null,
+  "_spec": "cordova-plugin-facebook4",
+  "_where": "C:\\xampp\\htdocs\\latihan\\ionic2\\ionicBlank\\node_modules",
+  "bugs": {
+    "url": "https://github.com/jeduan/cordova-plugin-facebook4/issues"
+  },
+  "cordova": {
+    "id": "cordova-plugin-facebook4",
+    "platforms": [
+      "android",
+      "ios",
+      "browser"
+    ]
+  },
+  "dependencies": {},
+  "description": "Cordova Facebook SDK 4 Plugin",
+  "devDependencies": {},
+  "directories": {},
+  "dist": {
+    "shasum": "84e54c239f6d80a844415d30cefe7a28c7090541",
+    "tarball": "https://registry.npmjs.org/cordova-plugin-facebook4/-/cordova-plugin-facebook4-1.9.0.tgz"
+  },
+  "gitHead": "d67a0fcb1cb8fa9c76b49aa0f0379c950a441889",
+  "homepage": "https://github.com/jeduan/cordova-plugin-facebook4#readme",
+  "keywords": [
+    "cordova",
+    "facebook",
+    "ecosystem:cordova",
+    "cordova-android",
+    "cordova-ios",
+    "cordova-browser",
+    "facebook-sdk",
+    "social",
+    "sharing"
+  ],
+  "license": "Apache-2.0",
+  "maintainers": [
+    {
+      "name": "arnesson",
+      "email": "robert@robertarnesson.com"
+    },
+    {
+      "name": "jeduan",
+      "email": "jeduan@gmail.com"
+    },
+    {
+      "name": "nightstomp",
+      "email": "info@nightstomp.com"
+    }
+  ],
+  "name": "cordova-plugin-facebook4",
+  "optionalDependencies": {},
+  "readme": "# cordova-plugin-facebook4\n\n> Use Facebook SDK version 4 in Cordova projects\n\n## Installation\n\nSee npm package for versions - https://www.npmjs.com/package/cordova-plugin-facebook4\n\nMake sure you've registered your Facebook app with Facebook and have an `APP_ID` [https://developers.facebook.com/apps](https://developers.facebook.com/apps).\n\n```bash\n$ cordova plugin add cordova-plugin-facebook4 --save --variable APP_ID=\"123456789\" --variable APP_NAME=\"myApplication\"\n```\n\nIf you need to change your `APP_ID` after installation, it's recommended that you remove and then re-add the plugin as above. Note that changes to the `APP_ID` value in your `config.xml` file will *not* be propagated to the individual platform builds.\n\n## Usage\n\nThis is a fork of the [official plugin for Facebook](https://github.com/Wizcorp/phonegap-facebook-plugin/) in Apache Cordova that implements the latest Facebook SDK. Unless noted, this is a drop-in replacement. You don't have to replace your client code.\n\nThe Facebook plugin for [Apache Cordova](http://cordova.apache.org/) allows you to use the same JavaScript code in your Cordova application as you use in your web application. However, unlike in the browser, the Cordova application will use the native Facebook app to perform Single Sign On for the user.  If this is not possible then the sign on will degrade gracefully using the standard dialog based authentication.\n\n## Compatibility\n\n  * Cordova >= 5.0.0\n  * cordova-android >= 4.0\n  * cordova-ios >= 3.8\n  * cordova-browser >= 3.6\n  * Phonegap build (use phonegap-version >= cli-5.2.0, android-minSdkVersion>=15, and android-build-tool=gradle), see [example here](https://github.com/yoav-zibin/phonegap-tictactoe/blob/gh-pages/www/config.xml)\n\n#### Install Guides\n\n- [iOS Guide](docs/ios/README.md)\n\n- [Android Guide](docs/android/README.md)\n\n- [Browser Guide](docs/browser/README.md)\n\n- [Troubleshooting Guide | F.A.Q.](docs/TROUBLESHOOTING.md)\n\n## API\n\n### Login\n\n`facebookConnectPlugin.login(Array strings of permissions, Function success, Function failure)`\n\nSuccess function returns an Object like:\n\n\t{\n\t\tstatus: \"connected\",\n\t\tauthResponse: {\n\t\t\tsession_key: true,\n\t\t\taccessToken: \"<long string>\",\n\t\t\texpiresIn: 5183979,\n\t\t\tsig: \"...\",\n\t\t\tsecret: \"...\",\n\t\t\tuserID: \"634565435\"\n\t\t}\n\t}\n\nFailure function returns an error String.\n\n### Logout\n\n`facebookConnectPlugin.logout(Function success, Function failure)`\n\n### Check permissions (iOS only)\n\n`facebookConnectPlugin.checkHasCorrectPermissions(Array strings of permissions, Function success, Function failure)`\n\nSuccess function returns a success string if all passed permissions are granted.\n\nFailure function returns an error String if any passed permissions are not granted.\n\n### Get Status\n\n`facebookConnectPlugin.getLoginStatus(Function success, Function failure)`\n\nSuccess function returns an Object like:\n\n```\n{\n\tauthResponse: {\n\t\tuserID: \"12345678912345\",\n\t\taccessToken: \"kgkh3g42kh4g23kh4g2kh34g2kg4k2h4gkh3g4k2h4gk23h4gk2h34gk234gk2h34AndSoOn\",\n\t\tsession_Key: true,\n\t\texpiresIn: \"5183738\",\n\t\tsig: \"...\"\n\t},\n\tstatus: \"connected\"\n}\n```\nFor more information see: [Facebook Documentation](https://developers.facebook.com/docs/reference/javascript/FB.getLoginStatus)\n\n### Show a Dialog\n\n`facebookConnectPlugin.showDialog(Object options, Function success, Function failure)`\n\nExample options -\nShare Dialog:\n\n\t{\n\t\tmethod: \"share\",\n\t\thref: \"http://example.com\",\n\t\tcaption: \"Such caption, very feed.\",\n\t\tdescription: \"Much description\",\n\t\tpicture: 'http://example.com/image.png',\n\t\thashtag: '#myHashtag',\n\t\tshare_feedWeb: true, // iOS only\n\t}\n\nFor iOS, the default dialog mode is [`FBSDKShareDialogModeAutomatic`](https://developers.facebook.com/docs/reference/ios/current/constants/FBSDKShareDialogMode/). You can share that by adding a specific dialog mode parameter. The available share dialog modes are: `share_sheet`, `share_feedBrowser`, `share_native` and `share_feedWeb`. [Read more about share dialog modes](https://developers.facebook.com/docs/reference/ios/current/constants/FBSDKShareDialogMode/)\n\nGame request:\n\n\t{\n\t\tmethod: \"apprequests\",\n\t\tmessage: \"Come on man, check out my application.\",\n\t\tdata: data,\n\t\ttitle: title,\n\t\tactionType: 'askfor',\n\t\tfilters: 'app_non_users'\n\t}\n\nSend Dialog:\n\n\t{\n\t\tmethod: \"send\",\n\t\tcaption: \"Check this out.\",\n\t\tlink: \"http://example.com\",\n\t\tdescription: \"The site I told you about\",\n\t\tpicture: \"http://example.com/image.png\"\n\t}\n\t\nShare dialog - Open Graph Story: (currently only fully available on Android, iOS currently does not support action_properties)\n\n\t{\n\t\tvar obj = {};\n\t\n    \tobj['og:type'] = 'objectname';\n    \tobj['og:title'] = 'Some title';\n    \tobj['og:url'] = 'https://en.wikipedia.org/wiki/Main_Page';\n    \tobj['og:description'] = 'Some description.';\n\n    \tvar ap = {};\n    \t\n    \tap['expires_in'] = 3600;\n    \t\n    \tvar options = {\n    \t\tmethod: 'share_open_graph', // Required\n        \taction: 'actionname', // Required\n        \taction_properties: JSON.stringify(ap), // Optional\n        \tobject: JSON.stringify(obj) // Required\n    \t};\n\t}\n\t\nIn case you want to use custom actions/objects, just prepend the app namespace to the name (E.g: ` obj['og:type'] = 'appnamespace:objectname' `, `action: 'appnamespace:actionname'`. The namespace of a Facebook app is found on the Settings page. \n\n\nFor options information see: [Facebook share dialog documentation](https://developers.facebook.com/docs/sharing/reference/share-dialog) [Facebook send dialog documentation](https://developers.facebook.com/docs/sharing/reference/send-dialog)\n\nSuccess function returns an Object with `postId` as String or `from` and `to` information when doing `apprequest`.\nFailure function returns an error String.\n\n### The Graph API\n\n`facebookConnectPlugin.api(String requestPath, Array permissions, Function success, Function failure)`\n\nAllows access to the Facebook Graph API. This API allows for additional permission because, unlike login, the Graph API can accept multiple permissions.\n\nExample permissions:\n\n\t[\"public_profile\", \"user_birthday\"]\n\nSuccess function returns an Object.\n\nFailure function returns an error String.\n\n**Note: \"In order to make calls to the Graph API on behalf of a user, the user has to be logged into your app using Facebook login.\"**\n\nFor more information see:\n\n- Calling the Graph API - [https://developers.facebook.com/docs/ios/graph](https://developers.facebook.com/docs/ios/graph)\n- Graph Explorer - [https://developers.facebook.com/tools/explorer](https://developers.facebook.com/tools/explorer)\n- Graph API - [https://developers.facebook.com/docs/graph-api/](https://developers.facebook.com/docs/graph-api/)\n\n\n# Events\n\nApp events allow you to understand the makeup of users engaging with your app, measure the performance of your Facebook mobile app ads, and reach specific sets of your users with Facebook mobile app ads.\n\n- [iOS] [https://developers.facebook.com/docs/ios/app-events](https://developers.facebook.com/docs/ios/app-events)\n- [Android] [https://developers.facebook.com/docs/android/app-events](https://developers.facebook.com/docs/android/app-events)\n- [JS] Does not have an Events API, so the plugin functions are empty and will return an automatic success\n\nActivation events are automatically tracked for you in the plugin.\n\nEvents are listed on the [insights page](https://www.facebook.com/insights/)\n\n### Log an Event\n\n`logEvent(String name, Object params, Number valueToSum, Function success, Function failure)`\n\n- **name**, name of the event\n- **params**, extra data to log with the event (is optional)\n- **valueToSum**, a property which is an arbitrary number that can represent any value (e.g., a price or a quantity). When reported, all of the valueToSum properties will be summed together. For example, if 10 people each purchased one item that cost $10 (and passed in valueToSum) then they would be summed to report a number of $100. (is optional)\n\n### Log a Purchase\n\n`logPurchase(Number value, String currency, Function success, Function failure)`\n\n**NOTE:** Both parameters are required. The currency specification is expected to be an [ISO 4217 currency code](http://en.wikipedia.org/wiki/ISO_4217)\n\n### Manually log activation events\n\n`activateApp(Function success, Function failure)`\n\n### App Invites\n\n`facebookConnectPlugin.appInvite(Object options, Function success, Function failure)`\n\nPlease check out the [App Invites Overview](https://developers.facebook.com/docs/app-invites/overview) before using this. The URL is expected to be an [App Link](https://developers.facebook.com/docs/applinks).\n\nExample options:\n\n    {\n      url: \"http://example.com\",\n      picture: \"http://example.com/image.png\"\n    }\n\n## Sample Code\n\n```js\nfacebookConnectPlugin.appInvite(\n    {\n        url: \"http://example.com\",\n        picture: \"http://example.com/image.png\"\n    },\n    function(obj){\n        if(obj) {\n            if(obj.completionGesture == \"cancel\") {\n                // user canceled, bad guy\n            } else {\n                // user really invited someone :)\n            }\n        } else {\n            // user just pressed done, bad guy\n        }\n    },\n    function(obj){\n        // error\n        console.log(obj);\n    }\n);\n```\n\n### Login\n\nIn your `onDeviceReady` event add the following\n\n```js\nvar fbLoginSuccess = function (userData) {\n  console.log(\"UserInfo: \", userData);\n}\n\nfacebookConnectPlugin.login([\"public_profile\"], fbLoginSuccess,\n  function loginError (error) {\n    console.error(error)\n  }\n);\n```\n\n### Get Access Token\n\nIf you need the Facebook access token (for example, for validating the login on server side), do:\n```js\nvar fbLoginSuccess = function (userData) {\n  console.log(\"UserInfo: \", userData);\n  facebookConnectPlugin.getAccessToken(function(token) {\n    console.log(\"Token: \" + token);\n  });\n}\n\nfacebookConnectPlugin.login([\"public_profile\"], fbLoginSuccess,\n  function (error) {\n    console.error(error)\n  }\n);\n```\n\n### Get Status and Post-to-wall\n\nFor a more instructive example change the above `fbLoginSuccess` to;\n\n```js\nvar fbLoginSuccess = function (userData) {\n  console.log(\"UserInfo: \", userData);\n  facebookConnectPlugin.getLoginStatus(function onLoginStatus (status) {\n    console.log(\"current status: \", status);\n    facebookConnectPlugin.showDialog({\n      method: \"share\"\n    }, function onShareSuccess (result) {\n      console.log(\"Posted. \", result);\n    });\n  });\n};\n```\n\n### Getting a User's Birthday\n\nUsing the graph api this is a very simple task:\n\n```js\nfacebookConnectPlugin.api(\"<user-id>/?fields=id,email\", [\"user_birthday\"],\n  function onSuccess (result) {\n    console.log(\"Result: \", result);\n    /* logs:\n      {\n        \"id\": \"000000123456789\",\n        \"email\": \"myemail@example.com\"\n      }\n    */\n  }, function onError (error) {\n    console.error(\"Failed: \", error);\n  }\n);\n```\n\n### Publish a Photo\n\nSend a photo to a user's feed\n\n```js\nfacebookConnectPlugin.showDialog({\n    method: \"share\",\n    picture:'https://www.google.co.jp/logos/doodles/2014/doodle-4-google-2014-japan-winner-5109465267306496.2-hp.png',\n    name:'Test Post',\n    message:'First photo post',\n    caption: 'Testing using phonegap plugin',\n    description: 'Posting photo using phonegap facebook plugin'\n  }, function (response) {\n    console.log(response)\n  }, function (response) {\n    console.log(response)\n  }\n);\n```\n",
+  "readmeFilename": "README.md",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jeduan/cordova-plugin-facebook4.git"
+  },
+  "scripts": {},
+  "version": "1.9.0"
+}

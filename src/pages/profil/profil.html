@@ -1,0 +1,57 @@
+<ion-content>
+	<img [src]="cover"/>
+	<img [src]="photo" id="profil-image"/>
+
+	<h2 id="nama">{{ nama }}</h2>
+
+  <ion-list no-border>
+    <ion-list-header>
+      General
+    </ion-list-header>
+    <ion-item>
+      <ion-icon name='settings' item-left></ion-icon>
+      <ion-label>App Language</ion-label>
+      <ion-select [(ngModel)]="profile[0].language">
+        <ion-option *ngFor="let language of profile[0].languages" [value]="language">{{language}}</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-toggle [(ngModel)]="profile[0].enableNotifications" (click)="toggleNotifications()"></ion-toggle>
+      <ion-label class="label"> Enable notifications </ion-label>
+      <ion-icon name='notifications' item-left></ion-icon>
+    </ion-item>
+  </ion-list>
+
+  <ion-list>
+    <ion-list-header>
+      Currency
+    </ion-list-header>
+    <ion-item>
+      <ion-icon name='card' item-left></ion-icon>
+      <ion-label>Payment Method</ion-label>
+      <ion-select [(ngModel)]="profile[0].paymentMethod">
+        <ion-option *ngFor="let method of profile[0].paymentMethods" [value]="method">{{method}}</ion-option>
+      </ion-select>
+    </ion-item>
+    <ion-item>
+      <ion-icon name='logo-usd' item-left></ion-icon>
+      <ion-label>Currency</ion-label>
+      <ion-select [(ngModel)]="profile[0].currency">
+        <ion-option *ngFor="let currency of profile[0].currencies" [value]="currency">{{currency}}</ion-option>
+      </ion-select>
+    </ion-item>
+  </ion-list>
+  
+  <ion-list>
+    <ion-list-header>
+      Other
+    </ion-list-header>
+    <ion-item>
+      <ion-icon name='power' item-left></ion-icon>
+      <button ion-button (click)="logOut()" item-right>
+      Logout
+      </button>
+    </ion-item>
+  </ion-list>
+
+</ion-content>

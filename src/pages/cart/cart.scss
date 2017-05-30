@@ -1,0 +1,95 @@
+page-cart {
+	.header-md {
+		.toolbar-md {
+			box-shadow:0px 3px 9px 1px rgba(0, 0, 0, 0.75);
+
+			.bar-button-md {
+				font-size:2.4rem;
+			}		
+		}
+	}
+
+	.list-md {
+		margin:0;
+
+		.item-md {
+			padding-left:0;
+
+			.label-md {
+				margin:0;
+			
+				.grid {
+					padding: 0;
+
+					.deskripsi-item {
+						margin-left: -15px;
+					}
+
+					p:nth-child(1) {
+						margin :0;
+						font-size: 2rem;
+				    color: #CF000F;
+				    font-weight: 900;
+				    text-transform: uppercase;
+				    letter-spacing: 1px;
+					}
+
+					p:nth-child(2) {
+						margin :0;
+				    color: #616161;
+				    font-weight: 500;
+					}
+
+					p:nth-child(3) {
+						margin :0;
+						padding-top:15px;
+				    color:  #000000;
+				    font-weight: 500;
+				    font-size: 1.7rem;
+					}
+				}	
+			}
+		}
+	}
+
+	.list-md:nth-child(1){
+		margin-top: 5px;
+	}
+
+
+	ion-footer {
+		height: 45px;
+
+		.grid {
+			padding:0;
+		}
+
+		#jumlah-item {
+			padding:0;
+
+			p:nth-child(1) {
+				margin:0;
+				color: #444;
+			}
+
+			p:nth-child(2) {
+				margin-top: 0;
+				color: #000000;
+				font-size: 20px;
+				font-weight: 600;
+			}
+		}
+
+
+		#checkout {
+			.button-md {
+				position: relative;
+		    bottom: 10px;
+		    border-radius:3px;
+		    box-shadow: -2px 2px 46px -8px rgba(0,0,0,0.75);
+			}
+		}
+	} // END ION-FOOTER
+	
+
+}

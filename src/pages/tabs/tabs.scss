@@ -1,0 +1,11 @@
+page-tabs {
+	.tabs-md .tab-button[aria-selected=true] {
+
+  	color: map-get($colors, bukalapak);
+	}
+
+	.tabs-md .tab-button[aria-selected=true] .tab-button-icon {
+  	color: map-get($colors, bukalapak);
+  }
+  
+}

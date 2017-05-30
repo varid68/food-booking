@@ -1,0 +1,65 @@
+page-drink-list {
+	.toolbar-md {
+		min-height: 45px;
+		max-height: 50px;
+		box-shadow:0px 3px 9px 1px rgba(0, 0, 0, 0.75);
+
+		.bar-button-md {
+			position:relative;
+			top: 10px;
+			margin-top: 4px;
+			font-size: 2.5rem;
+		}
+
+		.badge-md {
+      position: relative;
+      top: -29px;
+      left: 20px;
+      background-color: #000000;
+      border-radius:13px;
+     }
+
+    ion-badge {
+      padding: 5px 8px;
+      font-size: 1.1rem;
+      font-weight: bold;
+    }
+	}
+
+	#list-item {
+		margin-top: 5px;
+
+		.col {
+			padding: 5px;
+
+			.card-md {
+				width: 100%;
+				margin: 0;
+			}
+
+			.card-content-md {
+				padding: 5px;
+			}
+		}		
+	}
+
+	.myFab {
+		margin-top: -5px;
+		max-height: 60px;
+		max-width: 40px;
+		overflow: visible;
+    position: relative;
+
+    ion-label {
+      position: absolute;
+      top: 3px;
+      right: 40px;
+      color: white;
+      background-color: rgba(0,0,0,0.8);
+      line-height: 15px;
+      padding: 4px 8px;
+      border-radius: 4px;
+    }
+	}
+
+}

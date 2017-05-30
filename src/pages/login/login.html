@@ -1,0 +1,43 @@
+<ion-header>
+  <ion-navbar color="bukalapak">
+    <ion-title>Masuk</ion-title>
+  </ion-navbar>
+</ion-header>
+
+
+<ion-content padding>
+
+	<ion-list>
+	  <ion-item>
+	    <ion-label floating>Username</ion-label>
+	    <ion-input type="text"></ion-input>
+	  </ion-item>
+
+	  <ion-item>
+	    <ion-label floating>Password</ion-label>
+	    <ion-input type="password"></ion-input>
+	  </ion-item>
+	</ion-list>
+
+	 
+	<button ion-button block large color="bukalapak" (click)="toCheckout()">Masuk</button>
+	<a id="lupa-sandi">Lupa kata sandi?</a>
+	<div id="button-fb">
+		<button ion-button large block (click)="signInWithFacebook()">
+			<ion-icon name="logo-facebook"></ion-icon>Masuk Dengan Facebook
+		</button>
+	</div>
+	<div id="button-gmail">
+		<button ion-button large block (click)="signInWithGoogle()">
+			<ion-icon name="logo-google"></ion-icon>Masuk Dengan Google
+		</button>
+	</div>
+
+
+	<ion-footer>
+		<ion-toolbar>
+			<p text-center>Belum punya akun? Daftar Sekarang Bro</p>
+		</ion-toolbar>
+	</ion-footer>
+
+</ion-content>

@@ -1,0 +1,76 @@
+page-page-one {
+   .toolbar-md {
+      min-height: 45px!important;
+      max-height: 50px;
+      box-shadow:0px 3px 9px 1px rgba(0, 0, 0, 0.75);
+
+      .searchbar {
+         .searchbar-input {
+            height: 25%;
+            padding-left: 40px;
+         }
+
+         .searchbar-search-icon {
+            top: 7px;
+            left: 10px
+         }
+      }
+
+      .bar-button-md {
+         font-size: 2.4rem;
+         margin-top: 3px;
+      }
+
+      .badge-md {
+         position: relative;
+         top: -36px;
+         left: 20px;
+         background-color: #000000;
+         border-radius:13px;
+      }
+
+      ion-badge {
+         padding: 5px 8px;
+         font-size: 1.1rem;
+         font-weight: bold;
+      }
+   } // END TOOLBAR-MD CSS
+
+   .content-md {
+      #autocomplete {
+         position: fixed;
+         top: 50px;
+         left: 20px;
+         width: 74%;
+         height: auto;
+         z-index:99;
+         background-color:white;
+
+         .list-md {
+            margin:0;
+
+            .item-md {
+               min-height: 10px;
+               max-height: 40px;
+            }
+         }
+      }
+
+      ion-slides {
+         text-align: inherit;
+         font-size: inherit;
+
+         ion-slide, ion-slide .slide-zoom, .swiper-slide {
+            text-align: inherit;
+            font-size: inherit;
+         }
+      }
+
+      #etalase {
+         .grid {
+            padding :0;
+         }
+      }
+   }
+ 
+} // END MD

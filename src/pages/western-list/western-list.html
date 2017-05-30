@@ -1,0 +1,68 @@
+<ion-header>
+
+  <ion-toolbar color="bukalapak">
+  	<ion-grid>
+  		<ion-row>
+        <ion-col col-2>
+          <ion-buttons>
+            <button ion-button (click)="back()">
+              <ion-icon name="arrow-round-back"></ion-icon>
+            </button>
+          </ion-buttons>
+        </ion-col>
+        <ion-col col-2 offset-8>
+  				<ion-buttons>
+  					<button ion-button (click)="toCart()" end>
+  						<ion-icon name="cart"></ion-icon>
+  					</button>
+            <ion-badge>{{ jumlahOrder }}</ion-badge>
+  				</ion-buttons>
+  			</ion-col>
+  		</ion-row>
+  	</ion-grid> 
+  </ion-toolbar>
+
+</ion-header>
+
+
+<ion-content>
+
+	<div id="list-item">
+
+		<ion-row>
+			<ion-col col-6 *ngFor="let myList of list">
+				<ion-card tappable (click)="toDetail(myList)">
+			  	<img src="assets/img/list.png"/>
+			  	<ion-card-content>
+			    	<p>
+			      	<strong>{{ myList.item }}</strong><br>
+			      	{{ myList.jual | rupiah }}
+			    	</p>
+	  			</ion-card-content>
+				</ion-card>
+			</ion-col>
+		</ion-row>
+
+	</div>
+
+	<ion-fab bottom right #fab>
+    <button ion-fab color="bukalapak" (click)="play()">
+      <ion-icon name="funnel"></ion-icon>
+    </button>
+    <ion-fab-list side="top">
+      <div class="myFab">
+        <button ion-fab color="danger" (tap)="sort('nama')"><ion-icon name="color-wand"></ion-icon></button>
+        <ion-label>nama A ~ Z</ion-label>
+      </div>
+      <div class="myFab">
+        <button ion-fab color="secondary" (tap)="sort('termurah')"><ion-icon name="happy"></ion-icon></button>
+        <ion-label>termurah</ion-label>
+      </div>
+      <div class="myFab">
+        <button ion-fab color="jeruk" (tap)="sort('termahal')"><ion-icon name="cash"></ion-icon></button>
+        <ion-label>termahal</ion-label>
+      </div>
+    </ion-fab-list>
+  </ion-fab>
+
+</ion-content>

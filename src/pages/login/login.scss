@@ -1,0 +1,45 @@
+page-login {
+	ion-navbar.toolbar {
+		box-shadow:0px 3px 9px 1px rgba(0, 0, 0, 0.75);
+	}
+	
+	#lupa-sandi {
+		color: black;
+    text-decoration: underline;
+    margin-left: 110px;
+	}
+
+	#button-fb {
+		.button-large-md {
+			font-size: 1.8rem;
+		}
+
+		.button-md {
+			background-color: #3b5998;
+			margin-top: 20px;
+			text-transform: none;
+		}
+
+		.icon-md {
+			margin-right: 20px;
+		}
+	}
+
+
+	#button-gmail {	
+		.button-large-md {
+			font-size: 1.8rem;
+		}
+
+		.button-md {
+			background-color: #df4a32;
+			margin-top: 20px;
+			text-transform: none;
+		}
+
+		.icon-md {
+			margin-right: 20px;
+		}
+	}
+
+}

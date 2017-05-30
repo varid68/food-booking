@@ -1,0 +1,69 @@
+<ion-header>
+	<ion-toolbar color="bukalapak">
+  	<ion-grid>
+  		<ion-row>
+  			<ion-col col-2>
+  				<ion-buttons>
+  					<button ion-button (click)="back()">
+  						<ion-icon name="arrow-round-back"></ion-icon>
+  					</button>
+  				</ion-buttons>
+  			</ion-col>
+  			<ion-col col-8>
+  				<ion-title text-center #coba>
+  					Keranjang
+  				</ion-title>
+  			</ion-col>
+  			<ion-col col-2>
+  				<ion-buttons>
+  					<button ion-button (click)="toHome()" end>
+  						<ion-icon name="home"></ion-icon>
+  					</button>
+  				</ion-buttons>
+  			</ion-col>
+  		</ion-row>
+  	</ion-grid> 
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+		<ion-list *ngFor="let item of cart">
+			<ion-item-sliding (overSlide)="handleSwipe(item.id)" swipe-to-delete>
+				<ion-item>
+					<ion-grid>
+						<ion-row>
+							<ion-col col-4>
+								<img src="assets/img/cart.png">
+							</ion-col>
+							<ion-col col-8 class="deskripsi-item">
+								<p text-uppercase>{{ item.item }}</p>
+								<p>{{ item.total / item.jumlah | rupiah }} X [{{ item.jumlah }}]</p>
+								<p>Total : {{ item.total | rupiah }}</p>
+							</ion-col>
+						</ion-row>
+					</ion-grid>
+				</ion-item>
+				<ion-item-options side="right">
+					<button ion-button color="secondary" (click)="checkoutItem(item.id)">bayar</button>
+				</ion-item-options>
+			</ion-item-sliding>
+		</ion-list>
+
+</ion-content>
+
+<ion-footer>
+  <ion-toolbar>
+    <ion-grid>
+    	<ion-row>
+    		<ion-col col-5 id="jumlah-item">
+    			<p>{{ jumlahOrder }} item</p>
+    			<p>{{ total | rupiah }}</p>
+    		</ion-col>
+    		<ion-col col-7 id="checkout">
+    			<button ion-button full color="secondary" (click)="checkoutItems()">chekout</button>
+    		</ion-col>
+    	</ion-row>
+    </ion-grid>
+  </ion-toolbar>
+</ion-footer>

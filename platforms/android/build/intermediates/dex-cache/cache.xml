@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\exploded-aar\com.android.support\support-compat\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="da27a32db6af8954ee8061537c7d476fcb1df46f">
+        <dex dex="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-compat-25.3.1_86061bc3505f220f940df045e2379ca6b9986880.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\android-sdk-windows\extras\android\m2repository\com\android\support\support-annotations\25.3.1\support-annotations-25.3.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="bf8841d29fa39e077730e7a91222c2ce269fa7c9">
+        <dex dex="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\pre-dexed\debug\support-annotations-25.3.1_0082304d7ff5ca5111cd69f2e2cba6330af91c4b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-utils\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="6ef31f1555bb4cc513ec8d52711365a8b89f3600">
+        <dex dex="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-core-utils-25.3.1_f79c556aaeb9749d5af40945386f4500349f4ab6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\exploded-aar\com.android.support\cardview-v7\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="914f5d3e3ace66080e59613708f06d129a222e25">
+        <dex dex="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-cardview-v7-25.3.1_27e798db30e0e90fde2fa06ffa84331a7c50e111.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\exploded-aar\com.android.support\support-media-compat\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="45f697922e6f072daa12f8a2995dc77ab03c11da">
+        <dex dex="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-media-compat-25.3.1_bca9fec904cfaebf2643f21c7e8ce9908d9862dd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\exploded-aar\com.android.support\support-v4\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-v4-25.3.1_a5da68db201009cbb5bd360a90f8a62550c76fd9.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Asus\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-applinks\1.4.0\8ad21bf21784dacce5f2043afb97218cc377e835\bolts-applinks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\pre-dexed\debug\bolts-applinks-1.4.0_98e4f49fc7b6f15515485a1e0c5008a0e948317d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\exploded-aar\com.android.support\animated-vector-drawable\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="47635644d0d5c103c1dd8360549eb9ba3225c7d3">
+        <dex dex="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-animated-vector-drawable-25.3.1_3dbdcb623924b9ab9ff231172dee91388ce79040.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\exploded-aar\com.facebook.android\facebook-android-sdk\4.23.0\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4504ae3ec47953f3d0c324dc66996aecfb7fbb5c">
+        <dex dex="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\pre-dexed\debug\com.facebook.android-facebook-android-sdk-4.23.0_d20cd781fa62607e3c9576c5196756c2b279a99e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth\10.2.6\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="ec94bba6a9bbd3461d90830e0a0752a6487f5484">
+        <dex dex="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-auth-10.2.6_a73d85e8db5e4a0fc08e9b294dcf2ee506e479e1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-basement\10.2.6\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="900a290779cdb4eb2e63b6f7806fd9f30ce4f60d">
+        <dex dex="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-basement-10.2.6_84a6a11531138eed08fd6412756937685bc4ca24.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\exploded-aar\android\CordovaLib\unspecified\debug\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="82725ae203999df257d992b59ab97da8204b2800">
+        <dex dex="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\pre-dexed\debug\CordovaLib-unspecified-debug_974bbe632d3a86d7197f3857484e02b8db28a80f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\exploded-aar\com.android.support\appcompat-v7\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="150252b33b00274cc868578ade018fda0d43a3eb">
+        <dex dex="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-25.3.1_7c17d4211eb124c0857d8e67ec4e8646382f7944.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\libs\sqlite-connector.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="76169ab23a4f939925491c6fe186749da5a56ee9">
+        <dex dex="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\pre-dexed\debug\sqlite-connector_e8d99e9a70ad9b1f6809495f9c768ca0378148df.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\Asus\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_f003ad4dab4aaf0fb685d676d2138fe73bd156d6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\exploded-aar\com.android.support\support-vector-drawable\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="efb8cb62d47d157c29d1521daac7eefd4cb881ee">
+        <dex dex="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-vector-drawable-25.3.1_0a4132ddc44e9f51ce465fcfbd804971c8c249ef.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-auth-base\10.2.6\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="8a43729dd397e849f2a8bdc5d57a2f3170efb3ed">
+        <dex dex="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-auth-base-10.2.6_e78a4ef7b6c3775155b3717838805acfa2ebb5fa.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\exploded-aar\com.android.support\customtabs\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="807751a24cf96566fd8675517c94d8463cf364db">
+        <dex dex="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-customtabs-25.3.1_246aa26689a7aea89c81d8488adbed619470ccc0.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-identity\10.2.6\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="f1968b9614bc6851e99db64e356cf60063503e5d">
+        <dex dex="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-identity-10.2.6_8b43f2aa843adab297b8890d60e530cc9fcc595d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-base\10.2.6\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="3f0a85e6000998ac322ddd50750e8cf91601a84b">
+        <dex dex="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-base-10.2.6_7d693764f69e5e38aad43e6f67cbe98d4ae6779f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\exploded-aar\com.google.android.gms\play-services-tasks\10.2.6\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="69e74a8b1cbf5b8ee0fc0cca6bab1ac6c45efef8">
+        <dex dex="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\pre-dexed\debug\com.google.android.gms-play-services-tasks-10.2.6_7f620a6d9c77d723be5a4cfb648e63251bd1a960.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\exploded-aar\com.android.support\support-fragment\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="4a26a1154d053ab11aaf4c3967c42a4d66390991">
+        <dex dex="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-fragment-25.3.1_0c5fb242f8e49dd4e4f1b2431f1bb5617355ab84.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\exploded-aar\com.android.support\support-core-ui\25.3.1\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="25.0.2"
+        sha1="052f5f840f21174a3ecf6544130194e2652cbb73">
+        <dex dex="C:\xampp\htdocs\latihan\ionic2\ionicBlank\platforms\android\build\intermediates\pre-dexed\debug\com.android.support-support-core-ui-25.3.1_757b011de61b771d65a9e8cace265377c08e4040.jar" />
+    </item>
+
+</items>
