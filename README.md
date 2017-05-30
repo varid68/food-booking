@@ -1,5 +1,3 @@
-Ionic 2 Advanced Components Open Source Love
-
 Currently this project is using the latest versions of all: Ionic 3 and Angular 4
 
 This repository was made in order to help people learn and speed up their development process. You will find many many different components, pages, pipes, services, of which can be very useful to you. Note though that these are all experimental!
@@ -7,12 +5,6 @@ This repository was made in order to help people learn and speed up their develo
 The content here is a mix of tutorials found online, a few adapted codepen stuff, a few dribbble inspired layouts, and also other stuff made by me.
 
 HOPEFULLY you will like this repo and feel like contributing, so please if you can, contribute so we can have even more amazing content!
-
-Demo
-
-If you just want to check this project out, you can see the online demo at https://ioniccomponents.yannbraga.com/ or use Ionic View with the code bd1b6d71.
-
-Please notice that some plugins may only work when using a real device, so don't expect everything to work on ionic view or the browser.
 
 Setup
 
