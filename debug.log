@@ -1,0 +1,6 @@
+[0424/180027.387:ERROR:scoped_process_suspend.cc(30)] NtSuspendProcess: An attempt was made to access an exiting process.  (0xc000010a)
+[0424/180027.493:ERROR:process_info.cc(116)] ReadProcessMemory bool __cdecl crashpad::`anonymous-namespace'::ReadStruct<struct crashpad::process_types::RTL_USER_PROCESS_PARAMETERS<struct crashpad::process_types::internal::Traits64>>(void *,unsigned __int64,struct crashpad::process_types::RTL_USER_PROCESS_PARAMETERS<struct crashpad::process_types::internal::Traits64> *): Only part of a ReadProcessMemory or WriteProcessMemory request was completed. (0x12B)
+[0424/180027.494:ERROR:process_info.cc(559)] ReadProcessData failed
+[0424/180027.496:ERROR:process_reader_win.cc(142)] SuspendThread: Access is denied. (0x5)
+[0424/180027.497:ERROR:exception_snapshot_win.cc(87)] thread ID 13880 not found in process
+[0424/180027.497:WARNING:crash_report_exception_handler.cc(60)] ProcessSnapshotWin::Initialize failed

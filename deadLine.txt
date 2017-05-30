@@ -1,0 +1,14 @@
+1. searchBar error non QWERTY
+2. 
+3. 
+4. dismiss loading when back button fired
+5. tambahkan pilihan checkout all
+6. make image storage di firebase
+7. login make sendiri
+8. lupa kata sandi (7)
+9. buat daftar member
+10.
+11.
+12.menggunakan google maps
+13.ganti icon dan splashscreen
+14.conform on exit
